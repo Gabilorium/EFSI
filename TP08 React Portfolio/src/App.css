@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.skill-icon{
+  max-height: 80px !important;
+}

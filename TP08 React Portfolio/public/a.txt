@@ -1,6 +1,6 @@
 icon = {
   "vuejs": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",
-  react: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+  react: 
   angularjs:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
   angular: "https://angular.io/assets/images/logos/angular/angular.svg",
@@ -12,7 +12,7 @@ icon = {
   bootstrap: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
   canvasjs: "https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg",
   coffeescript:
-    "https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg",
+    
   codeigniter: "https://cdn.worldvectorlogo.com/logos/codeigniter.svg",
   css3: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
   d3js: "https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg",
@@ -23,31 +23,31 @@ icon = {
   express: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   graphql: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
   gulp: "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
-  html5: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+  html5: 
   hugo: "https://api.iconify.design/logos-hugo.svg",
   ionic: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg",
   laravel: "https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg",
   meteor: "https://devicons.github.io/devicon/devicon.git/icons/meteor/meteor-original-wordmark.svg",
   mongodb: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-  mysql: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+  mysql:
   nestjs: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg",
   nginx: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
   nodejs: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
   openresty: "https://openresty.org/images/logo.png",
   oracle: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
-  photoshop: "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
+  photoshop: 
   xd: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
   postgresql:
     "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
   python: 
   rails: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
   redis: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg",
-  rust: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg",
+  rust: 
   sass: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
   solidworks: "https://cdn.worldvectorlogo.com/logos/solidworks.svg",
   symfony: "https://symfony.com/logos/symfony_black_03.svg",
   spring: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
-  swift: "https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg", 
+
   redux: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   webpack:
     "https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg",
@@ -71,8 +71,8 @@ icon = {
     "https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg",
   seaborn: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
   opencv: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg",
-  illustrator: "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
-  figma: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+  illustrator: 
+  figma: 
   blender: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
   babel: "https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg",
   sketch: "https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg",
@@ -103,9 +103,9 @@ icon = {
   reactnative: "https://reactnative.dev/img/header_logo.svg",
   mariadb: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
   cockroachdb: "https://cdn.worldvectorlogo.com/logos/cockroachdb.svg",
-  objectivec: "https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
-  clojure: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
-  haskell: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
+  objectivec: 
+  clojure: 
+  haskell: 
   svelte: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg",
   vuetify: "https://bestofjs.org/logos/vuetify.svg",
   pug: "https://cdn.worldvectorlogo.com/logos/pug.svg",
@@ -136,17 +136,17 @@ icon = {
   sapper: "https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg",
   vuepress:
     "https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg",   
-  elixir: "https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
+  elixir: ,
   heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
   appwrite: "https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg",
   hexo: "https://www.vectorlogo.zone/logos/hexoio/hexoio-icon.svg",
   travisci: "https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg",
   apachecordova: "https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg", 
   postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-  erlang: "https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
-  nim: "https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg",
+  erlang: 
+  nim: 
   sqlite: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
-  mssql: "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
+  mssql: 
   middleman:
     "https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg",
   matlab: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
@@ -155,7 +155,7 @@ icon = {
 webSite = {
   solidworks: "https://www.solidworks.com/",
   vuejs: "https://vuejs.org/",
-  react: "https://reactjs.org/",
+  react: ,
   angularjs: "https://angular.io",
   angular: "https://angular.io",
   aws: "https://aws.amazon.com",
@@ -163,10 +163,9 @@ webSite = {
   backbonejs: "https://backbonejs.org",
   bootstrap: "https://getbootstrap.com",
   canvasjs: "https://canvasjs.com",
-  coffeescript: "https://offeescript.org",
+  coffeescript: ,
   codeigniter: "https://codeigniter.com",
   css3: "https://www.w3schools.com/css/",
-
   d3js: "https://d3js.org/",
   django: "https://www.djangoproject.com/",
   docker: "https://www.docker.com/",
@@ -175,31 +174,28 @@ webSite = {
   express: "https://expressjs.com",
   graphql: "https://graphql.org",
   gulp: "https://gulpjs.com",
-  html5: "https://www.w3.org/html/",
+  html5: 
   hugo: "https://gohugo.io/",
   ionic: "https://ionicframework.com",
   laravel: "https://laravel.com/",
   matlab: "https://www.mathworks.com/",
   meteor: "https://www.meteor.com/",
   mongodb: "https://www.mongodb.com/",
-  mysql: "https://www.mysql.com/",
+  mysql: 
   nestjs: "https://nestjs.com/",
   nginx: "https://www.nginx.com",
   nodejs: "https://nodejs.org",
   openresty: "https://openresty.org/",
   oracle: "https://www.oracle.com/",
-  photoshop: "https://www.photoshop.com/en",
+  photoshop: ,
   xd: "https://www.adobe.com/products/xd.html",
-  postgresql: "https://www.postgresql.org",
-  python: 
+  postgresql: "https://www.postgresql.org", 
   rails: "https://rubyonrails.org",
   redis: "https://redis.io",
-  rust: "https://www.rust-lang.org",
+  rust: 
   sass: "https://sass-lang.com",
   symfony: "https://symfony.com",
   spring: "https://spring.io/",
-  swift: "https://developer.apple.com/swift/",
-  typescript:
   redux: "https://redux.js.org",
   webpack: "https://webpack.js.org",
   flutter: "https://flutter.dev",
@@ -221,8 +217,8 @@ webSite = {
   pandas: "https://pandas.pydata.org/",
   seaborn: "https://seaborn.pydata.org/",
   opencv: "https://opencv.org/",
-  illustrator: "https://www.adobe.com/in/products/illustrator.html",
-  figma: "https://www.figma.com/",
+  illustrator: ,
+  figma: 
   blender: "https://www.blender.org/",
   babel: "https://babeljs.io/",
   sketch: "https://www.sketch.com/",
@@ -249,9 +245,9 @@ webSite = {
   mariadb: "https://mariadb.org/",
   cockroachdb: "https://www.cockroachlabs.com/product/cockroachdb/",
   objectivec:
-    "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
-  clojure: "https://clojure.org/",
-  haskell: "https://www.haskell.org/",
+    
+  clojure: 
+  haskell: 
   svelte: "https://svelte.dev",
   vuetify: "https://vuetifyjs.com/en/",
   pug: "https://pugjs.org",
@@ -281,13 +277,314 @@ webSite = {
   hexo: "hexo.io/",
   heroku: "https://heroku.com",
   appwrite: "https://appwrite.io",
-  elixir: "https://elixir-lang.org",
+  elixir: ,
   travisci: "https://travis-ci.org",
   apachecordova: "https://cordova.apache.org/",
   sqlite: "https://www.sqlite.org/",
-  mssql: "https://www.microsoft.com/en-us/sql-server",
+  mssql: 
   postman: "https://postman.com",
-  erlang: "https://www.erlang.org/",
-  nim: "https://nim-lang.org/",
+  erlang: ,
+  nim: ,
   middleman: "https://middlemanapp.com/",
 }
+
+{
+    "title": "Frontend Development",
+    "skills": [
+      "vuejs",
+      ,
+      "svelte",
+      "angularjs",
+      "angular",
+      "backbonejs",
+      "bootstrap",
+      "vuetify",
+      "css3",
+      ,
+      "pug",
+      "gulp",
+      "sass",
+      "redux",
+      "webpack",
+      "babel",
+      "tailwind",
+      "materialize",
+      "bulma",
+      "gtk",
+      "qt",
+      "wx_widgets",
+      "ember"
+    ]
+  },{
+    "title": "Backend Development",
+    "skills": [
+      "nodejs",
+      "spring",
+      "express",
+      "graphql",
+      "kafka",
+      "solr",
+      "rabbitMQ",
+      "hadoop",
+      "nginx",
+      "openresty",
+      "nestjs"
+    ]
+  },{
+    "title": "Mobile App Development",
+    "skills": [
+      "android",
+      "flutter",
+      "dart",
+      "kotlin",
+      "nativescript",
+      "xamarin",
+      "reactnative",
+      "ionic",
+      "apachecordova"
+    ]
+  },{
+    "title": "AI/ML",
+    "skills": [
+      "tensorflow", 
+      "pytorch",
+      "pandas", 
+      "seaborn", 
+      "opencv", 
+      "scikit_learn"
+    ]
+  },{
+    "title": "Database",
+    "skills": [
+      "mongodb",
+      "postgresql",
+      "redis",
+      "oracle",
+      "cassandra",
+      "couchdb",
+      "hive",
+      "realm",
+      "mariadb",
+      "cockroachdb",
+      "elasticsearch",
+      "sqlite",
+      
+    ]
+  },{
+    "title": "Data Visualization",
+    "skills": [
+      "d3js", 
+      "chartjs", 
+      "canvasjs", 
+      "kibana", 
+      "grafana"
+    ]
+  },{
+    "title": "Devops",
+    "skills": [
+      "aws", 
+      "docker", 
+      "jenkins", 
+      "gcp", 
+      "kubernetes", 
+      "bash", 
+      "azure", 
+      "vagrant", 
+      "circleci", 
+      "travisci"
+    ]
+  },{
+    "title": "Backend as a Service(BaaS)",
+    "skills": [
+      "firebase",
+      "appwrite", 
+      "amplify", 
+      "heroku"]
+  },
+
+  {
+    "title": "Framework",
+    "skills": [
+      "django", 
+      "dotnet", 
+      "electron", 
+      "symfony", 
+      "laravel", 
+      "codeigniter", 
+      "rails", 
+      "flask", 
+      "quasar"
+    ]
+  },
+
+  {
+    "title": "Testing",
+    "skills": [
+      "cypress", 
+      "selenium", 
+      "jest", "mocha", 
+      "puppeteer", 
+      "karma", 
+      "jasmine"
+    ]
+  },{
+    "title": "Software",
+    "skills": [
+      
+       
+      "xd", 
+      , 
+      "blender", 
+      "sketch", 
+      "invision", 
+      "framer", 
+      "matlab", 
+      "postman"
+    ]
+  },{
+    "title": "Static Site Generators",
+    "skills": [
+      "gatsby",
+      "gridsome",
+      "hugo",
+      "jekyll",
+      "nextjs",
+      "nuxtjs",
+      "11ty",
+      "scully",
+      "sculpin",
+      "sapper",
+      "vuepress",
+      "hexo",
+      "middleman"
+    ]
+  },
+/*,{
+      {
+      "name":"c",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+      "webSite":"https://www.cprogramming.com/"
+      },{
+      "name":"c++",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+      "webSite":"https://www.w3schools.com/cpp/"
+      },{
+      "name": "unreal",
+      "icon":"https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
+      "webSite":"https://unrealengine.com/"
+      },{
+      "name":"zapier",
+      "icon":"https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg",
+      "webSite":"https://zapier.com"
+      },{
+      "name":"go",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+      "webSite":"https://golang.org"
+      },{ 
+      "name":"ifttt",
+      "icon":"https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg",
+      "webSite":"https://ifttt.com/"
+      }{
+      "name":"java",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      "webSite":"https://www.java.com"
+      },,{
+      "name":"php",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
+      "webSite":"https://www.php.net"
+      },{
+      "name":"perl",
+      "icon":"https://api.iconify.design/logos-perl.svg",
+      "webSite":"https://www.perl.org/"
+      },{
+      "name":"typescript",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      "webSite":"https://www.typescriptlang.org/"
+      },{
+      "name":"ruby",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
+      "webSite":"https://www.ruby-lang.org/en/"
+      },{
+      "name":"scala",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg",
+      "webSite":"https://www.scala-lang.org"
+      }{
+      "name":"swift",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg",
+      "webSite":"https://developer.apple.com/swift/"
+      },{
+      "name":"objectivec",
+      "icon":"https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg",
+      "webSite":"https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
+      },{
+      "name":"clojure",
+      "icon":"https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg",
+      "webSite":"https://clojure.org/"
+      },{
+      "name":"rust",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg",
+      "webSite":"https://www.rust-lang.org"
+      },{
+      "name":"haskell",
+      "icon":"https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg",
+      "webSite":"https://www.haskell.org/"
+      },{
+      "name":"coffeescript",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg",
+      "webSite":"https://offeescript.org"
+      },{
+      "name":"elixir",
+      "icon":"https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg",
+      "webSite":"https://elixir-lang.org"
+      },{
+      "name":"erlang",
+      "icon":"https://www.vectorlogo.zone/logos/erlang/erlang-official.svg",
+      "webSite":"https://www.erlang.org/"
+      },{
+      "name":"nim",
+      "icon":"https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg",
+      "webSite":"https://nim-lang.org/"
+      },{
+        "name":"unity",
+        "icon": "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+        "webSite": "https://unity.com/"
+      },{
+        "name": "unreal",
+        "icon":"https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
+        "webSite":"https://unrealengine.com/"
+      },{
+        "name":"zapier",
+        "icon":"https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg",
+        "webSite":"https://zapier.com"
+        },{ 
+          "name":"ifttt",
+          "icon":"https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg",
+          "webSite":"https://ifttt.com/"
+      },{
+        "name":"linux",
+        "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+        "webSite":"https://www.linux.org/"
+        },{ 
+        "name":"git",
+        "icon":"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+        "webSite":"https://git-scm.com/"
+        },{ 
+        "name":"arduino",
+        "icon":"https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
+        "webSite":"https://www.arduino.cc/"
+      }
+    },{
+    {
+      "name":"linux",
+      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+      "webSite":"https://www.linux.org/"
+      },{ 
+      "name":"git",
+      "icon":"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "webSite":"https://git-scm.com/"
+      },{ 
+      "name":"arduino",
+      "icon":"https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
+      "webSite":"https://www.arduino.cc/"
+    }]
+  }

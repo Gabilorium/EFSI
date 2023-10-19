@@ -1,299 +1,48 @@
-[
-  {
-    "title": "Programming Languages",
-    "skills": [{
-      "name":"c",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
-      "webSite":"https://www.cprogramming.com/"
-      },{
-      "name":"cplusplus",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
-      "webSite":"https://www.w3schools.com/cpp/"
-      },{
+[  
+      {
       "name":"csharp",
       "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg",
       "webSite":"https://www.w3schools.com/cpp/"
-      },{
-      "name":"go",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
-      "webSite":"https://golang.org"
-      },{
-      "name":"java",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      "webSite":"https://www.java.com"
       },{
       "name":"javascript",
       "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       "webSite":"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },{
-      "name":"typescript",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-      "webSite":"https://www.typescriptlang.org/"
-      },{
-      "name":"php",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
-      "webSite":"https://www.php.net"
-      },{
-      "name":"perl",
-      "icon":"https://api.iconify.design/logos-perl.svg",
-      "webSite":"https://www.perl.org/"
-      },{
-      "name":"ruby",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
-      "webSite":"https://www.ruby-lang.org/en/"
-      },{
-      "name":"scala",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg",
-      "webSite":"https://www.scala-lang.org"
-      },{
-      "name":"python",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      "webSite":"https://www.python.org"
-      },{
-      "name":"swift",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"objectivec",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"clojure",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"rust",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"haskell",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"coffeescript",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"elixir",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"erlang",
-      "icon":"",
-      "webSite":""
-      },{
-      "name":"nim",
-      "icon":"",
-      "webSite":""
-    }]
-  },{
-    "title": "Frontend Development",
-    "skills": [
-      "vuejs",
-      "react",
-      "svelte",
-      "angularjs",
-      "angular",
-      "backbonejs",
-      "bootstrap",
-      "vuetify",
-      "css3",
-      "html5",
-      "pug",
-      "gulp",
-      "sass",
-      "redux",
-      "webpack",
-      "babel",
-      "tailwind",
-      "materialize",
-      "bulma",
-      "gtk",
-      "qt",
-      "wx_widgets",
-      "ember"
-    ]
-  },{
-    "title": "Backend Development",
-    "skills": [
-      "nodejs",
-      "spring",
-      "express",
-      "graphql",
-      "kafka",
-      "solr",
-      "rabbitMQ",
-      "hadoop",
-      "nginx",
-      "openresty",
-      "nestjs"
-    ]
-  },{
-    "title": "Mobile App Development",
-    "skills": [
-      "android",
-      "flutter",
-      "dart",
-      "kotlin",
-      "nativescript",
-      "xamarin",
-      "reactnative",
-      "ionic",
-      "apachecordova"
-    ]
-  },{
-    "title": "AI/ML",
-    "skills": [
-      "tensorflow", 
-      "pytorch",
-      "pandas", 
-      "seaborn", 
-      "opencv", 
-      "scikit_learn"
-    ]
-  },{
-    "title": "Database",
-    "skills": [
-      "mongodb",
-      "mysql",
-      "postgresql",
-      "redis",
-      "oracle",
-      "cassandra",
-      "couchdb",
-      "hive",
-      "realm",
-      "mariadb",
-      "cockroachdb",
-      "elasticsearch",
-      "sqlite",
-      "mssql"
-    ]
-  },{
-    "title": "Data Visualization",
-    "skills": [
-      "d3js", 
-      "chartjs", 
-      "canvasjs", 
-      "kibana", 
-      "grafana"
-    ]
-  },{
-    "title": "Devops",
-    "skills": [
-      "aws", 
-      "docker", 
-      "jenkins", 
-      "gcp", 
-      "kubernetes", 
-      "bash", 
-      "azure", 
-      "vagrant", 
-      "circleci", 
-      "travisci"
-    ]
-  },{
-    "title": "Backend as a Service(BaaS)",
-    "skills": [
-      "firebase",
-      "appwrite", 
-      "amplify", 
-      "heroku"]
-  },
-
-  {
-    "title": "Framework",
-    "skills": [
-      "django", 
-      "dotnet", 
-      "electron", 
-      "symfony", 
-      "laravel", 
-      "codeigniter", 
-      "rails", 
-      "flask", 
-      "quasar"
-    ]
-  },
-
-  {
-    "title": "Testing",
-    "skills": [
-      "cypress", 
-      "selenium", 
-      "jest", "mocha", 
-      "puppeteer", 
-      "karma", 
-      "jasmine"
-    ]
-  },{
-    "title": "Software",
-    "skills": [
-      "illustrator", 
-      "photoshop", 
-      "xd", 
-      "figma", 
-      "blender", 
-      "sketch", 
-      "invision", 
-      "framer", 
-      "matlab", 
-      "postman"
-    ]
-  },{
-    "title": "Static Site Generators",
-    "skills": [
-      "gatsby",
-      "gridsome",
-      "hugo",
-      "jekyll",
-      "nextjs",
-      "nuxtjs",
-      "11ty",
-      "scully",
-      "sculpin",
-      "sapper",
-      "vuepress",
-      "hexo",
-      "middleman"
-    ]
-  },{
-    "title": "Game Engines",
-    "skills": [{
         "name":"unity",
         "icon": "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
         "webSite": "https://unity.com/"
       },{
-        "name": "unreal",
-        "icon":"https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
-        "webSite":"https://unrealengine.com/"
-      }]
-  },{
-    "title": "Automation",
-    "skills": [{
-      "name":"zapier",
-      "icon":"https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg",
-      "webSite":"https://zapier.com"
-      },{ 
-        "name":"ifttt",
-        "icon":"https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg",
-        "webSite":"https://ifttt.com/"
-      }]
-  },{
-    "title": "Other",
-    "skills": [{
-      "name":"linux",
-      "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
-      "webSite":"https://www.linux.org/"
-      },{ 
-      "name":"git",
-      "icon":"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      "webSite":"https://git-scm.com/"
-      },{ 
-      "name":"arduino",
-      "icon":"https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
-      "webSite":"https://www.arduino.cc/"
-    }]
-  }
+        "name":"mysql",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        "webSite":"https://www.mysql.com/"
+      },{
+        "name":"figma",
+        "icon":"https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+        "webSite":"https://www.figma.com/"
+      },{
+        "name":"html5",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "webSite":"https://www.w3.org/html/"
+      },{
+        "name":"illustrator",
+        "icon": "https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg",
+        "webSite":"https://www.adobe.com/in/products/illustrator.html"
+      },{
+        "name":"mssql",
+        "icon":"https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
+        "webSite":"https://www.microsoft.com/en-us/sql-server"
+      },{
+        "name":"photoshop",
+        "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
+        "webSite":"https://www.photoshop.com/en"
+      },{
+        "name":"python",
+        "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        "webSite":"https://www.python.org"
+      },{
+        "name":"react",
+        "icon":"https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "webSite":"https://reactjs.org/"
+      }
 ]
 
