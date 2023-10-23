@@ -42,7 +42,7 @@ export default function Skills() {
           </Title>
           <Row className="mt-3 align-items-center">
             {skillsList.map((skills, id) => {
-              console.log(skills.length)
+              //console.log(skills.length)
               return(
                <Col xs={3} key={id} className="my-md-5">
                     <img className="skill-icon" src={skills.icon} alt={skills.name}/>

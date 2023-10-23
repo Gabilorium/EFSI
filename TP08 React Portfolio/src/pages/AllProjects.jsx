@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { selectData as homeData } from "../pages/homeSlice";
 import { selectData, selectError, selectIsLoading } from "./allProjectsSlice";
@@ -41,10 +41,10 @@ const StyledSection = styled.section`
 `;
 
 export default function AllProjects() {
-  const [searchInput, setSearchInput] = React.useState("");
-  const [filteredResults, setFilteredResults] = React.useState([]);
-  const [pageItems, setPageItems] = React.useState([]);
-  const [activePage, setActivePage] = React.useState(1);
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredResults, setFilteredResults] = useState([]);
+  const [pageItems, setPageItems] = useState([]);
+  const [activePage, setActivePage] = useState(1);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);

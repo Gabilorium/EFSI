@@ -79,20 +79,27 @@ const defaultProps = {
 export default function NavBar({ Logo }) {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
   const { pathname } = useLocation();
-  const navLinks = {
-    routes: [
-      { id: "1R", name: "Home", route: "/" },
-      { id: "2R", name: "All Projects", route: "/All-Projects" },
-    ],
-    to: [
-      { id: "1T", name: "Home", to: "Home" },
-      { id: "2T", name: "About Me", to: "About" },
-      { id: "3T", name: "Skills", to: "Skills" },
-      { id: "4T", name: "Projects", to: "Projects" },
-      { id: "5T", name: "Contact", to: "Contact" },
-    ],
-  };
 
+  const routes = [
+
+  ]
+  const linkds =[
+    
+  ]
+const links = {
+  to:[
+  {id: "1T", name: "Home", to: "Home" },
+  { id: "2T", name: "About Me", to: "About" },
+  { id: "3T", name: "Skills", to: "Skills" },
+  { id: "4T", name: "Projects", to: "Projects" },
+  { id: "5T", name: "Contact", to: "Contact" }
+  ],
+  routes:[
+    { id: "1R", name: "Home", route: "/" },
+    { id: "2R", name: "All Projects", route: "/All-Projects" },
+    { id: "3R", name: "Favorites", route: "/Favorites"}
+  ]
+}
   return (
     <>
       <FixedNavSpacer />
@@ -122,24 +129,22 @@ export default function NavBar({ Logo }) {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav navbarScroll className="me-auto">
               {pathname === "/"
-                ? navLinks.to.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <ScrollLink
-                          to={el.to}
-                          spy={true}
-                          activeClass="active"
-                          className="nav-link"
-                          onClick={closeExpanded}
-                        >
-                          {el.name}
-                        </ScrollLink>
-                      </Nav.Item>
-                    );
-                  })
-                : navLinks.routes.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
+                ? links.to.map((el , id) => 
+                    <Nav.Item key={id}>
+                      <ScrollLink
+                        to={el.to}
+                        spy={true}
+                        activeClass="active"
+                        className="nav-link"
+                        onClick={closeExpanded}
+                      >
+                        {el.name}
+                      </ScrollLink>
+                    </Nav.Item> 
+                  ) : <p></p>
+                } {links.routes.map((el, id) => 
+                    /*return (*/
+                      <Nav.Item key={id}>
                         <Link
                           to={el.route}
                           className={
@@ -152,8 +157,8 @@ export default function NavBar({ Logo }) {
                           {el.name}
                         </Link>
                       </Nav.Item>
-                    );
-                  })}
+                      )}
+                  
             </Nav>
             <Nav>
               <ThemeToggle />

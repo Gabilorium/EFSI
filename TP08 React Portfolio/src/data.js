@@ -18,6 +18,7 @@ export { HeroDark as Dark };
 /* START HERE
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
+  Make it exactly the same with every caps
 */
 export const githubUsername = "Gabilorium";
 

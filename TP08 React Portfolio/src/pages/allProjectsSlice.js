@@ -21,7 +21,9 @@ export const fetchGitHubReops = createAsyncThunk(
         return res;
       });
       const data = await response.json();
-      return data;
+      console.log(data)
+      const newData = data.filter((data) => (data.name !== githubUsername) && (data.visibility === "public") )
+      return newData;
     } catch (err) {
       return rejectWithValue(
         `Error: ${err.message}, check username in data.js (currently ${githubUsername})`
