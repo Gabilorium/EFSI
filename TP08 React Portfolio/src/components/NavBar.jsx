@@ -88,14 +88,13 @@ export default function NavBar({ Logo }) {
   ]
 const links = {
   to:[
-  {id: "1T", name: "Home", to: "Home" },
-  { id: "2T", name: "About Me", to: "About" },
-  { id: "3T", name: "Skills", to: "Skills" },
-  { id: "4T", name: "Projects", to: "Projects" },
-  { id: "5T", name: "Contact", to: "Contact" }
+    { id: "1T", name: "Home", to: "Home" },
+    { id: "2T", name: "About Me", to: "About" },
+    { id: "3T", name: "Skills", to: "Skills" },
+    { id: "4T", name: "Projects", to: "Projects" },
+    { id: "5T", name: "Contact", to: "Contact" }
   ],
   routes:[
-    { id: "1R", name: "Home", route: "/" },
     { id: "2R", name: "All Projects", route: "/All-Projects" },
     { id: "3R", name: "Favorites", route: "/Favorites"}
   ]
@@ -114,6 +113,7 @@ const links = {
       >
         <Container>
           <Navbar.Brand>
+          <Link to={"/"}>
             <img
               alt="Logo"
               src={Logo}
@@ -121,6 +121,8 @@ const links = {
               height="35"
               className="rounded-circle"
             />
+            
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -141,7 +143,7 @@ const links = {
                         {el.name}
                       </ScrollLink>
                     </Nav.Item> 
-                  ) : <p></p>
+                  ) : <></>
                 } {links.routes.map((el, id) => 
                     /*return (*/
                       <Nav.Item key={id}>

@@ -1,11 +1,7 @@
-import React from "react";
+import { useContext, useEffect, useState } from "react";
 import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
-import {
-  selectData,
-  selectError,
-  selectIsLoading,
-} from "../pages/allProjectsSlice";
+import { selectData, selectError, selectIsLoading} from "../pages/allProjectsSlice";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 // Data
@@ -16,31 +12,27 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import { FavoritosContext } from "../Context/FavoritosContext";
 
 export default function Projects() {
-  const [mainProjects, setMainProjects] = React.useState([]);
+  const {manejarFavorito} = useContext(FavoritosContext);
+  const [mainProjects, setMainProjects] = useState([]);
   const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
 
-  React.useEffect(
-    function () {
-      const tempData = [];
-      data.forEach((el, i) => (tempData[i] = Object.create(el)));
-      if (data.length !== 0 && filteredProjects.length !== 0) {
-        const tempArray = tempData.filter((obj) =>
-          filteredProjects.includes(obj.name)
-        );
-        tempArray.length !== 0
-          ? setMainProjects([...tempArray])
-          : setMainProjects([...tempData.slice(0, 3)]);
-      } else {
-        setMainProjects([...tempData.slice(0, 3)]);
-      }
-    },
-    [data]
+  
+
+  useEffect(
+    ()=>{
+      if(data.length >0){
+        setMainProjects(data.slice(0,3))
+       }
+    },[data]
   );
+  console.log(data)
+  
 
   return (
     <Element name={"Projects"} id="projects">
@@ -83,6 +75,7 @@ export default function Projects() {
                         url={html_url}
                         demo={homepage}
                       />
+                      
                     </Col>
                   );
                 })}

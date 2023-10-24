@@ -50,6 +50,8 @@ export default function AllProjects() {
   const data = useSelector(selectData);
   const { name } = useSelector(homeData);
 
+  console.log("Pagina.jsx ", data)
+
   React.useEffect(
     function () {
       document.title = `${name} | All Projects`;
