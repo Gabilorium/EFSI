@@ -25,7 +25,7 @@ export const fetchGitHubReops = createAsyncThunk(
       const newData = data.filter((data) => (data.name !== githubUsername) && (data.visibility === "public") )
       let newproyectos = JSON.parse(JSON.stringify(newData))
       newproyectos.map((p) =>
-        p.favorito = false
+        {...p, [favorito] = false}
       )
       return newData;
     } catch (err) {
