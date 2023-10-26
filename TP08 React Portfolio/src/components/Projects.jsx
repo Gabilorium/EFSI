@@ -1,21 +1,18 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
 import { selectData, selectError, selectIsLoading} from "../pages/allProjectsSlice";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 // Data
-import { filteredProjects } from "../data";
 // Icons
 import { Icon } from "@iconify/react";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
-import { FavoritosContext } from "../Context/FavoritosContext";
-
 export default function Projects() {
-  const {manejarFavorito} = useContext(FavoritosContext);
+
   const [mainProjects, setMainProjects] = useState([]);
   const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
@@ -31,7 +28,7 @@ export default function Projects() {
        }
     },[data]
   );
-  console.log(data)
+  //console.log(data.image)
   
 
   return (
@@ -58,24 +55,10 @@ export default function Projects() {
           {mainProjects.length !== 0 && (
             <>
               <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
-                {mainProjects.map(function ({
-                  id,
-                  image,
-                  name,
-                  description,
-                  html_url,
-                  homepage,
-                }) {
+                {mainProjects.map((proy) =>{
                   return (
-                    <Col key={id}>
-                      <StyledCard
-                        image={image}
-                        name={name}
-                        description={description}
-                        url={html_url}
-                        demo={homepage}
-                      />
-                      
+                    <Col key={proy.id}>
+                      <StyledCard proyect={proy} />
                     </Col>
                   );
                 })}
