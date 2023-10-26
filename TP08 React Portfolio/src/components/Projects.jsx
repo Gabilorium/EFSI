@@ -18,7 +18,7 @@ export default function Projects() {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
-
+  console.log(data)
   
 
   useEffect(

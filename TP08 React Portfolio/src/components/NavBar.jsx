@@ -79,26 +79,19 @@ const defaultProps = {
 export default function NavBar({ Logo }) {
   const { theme, isExpanded, closeExpanded, toggleExpanded } = useAppContext();
   const { pathname } = useLocation();
-
-  const routes = [
-
-  ]
-  const linkds =[
-    
-  ]
-const links = {
-  to:[
-    { id: "1T", name: "Home", to: "Home" },
-    { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
-    { id: "5T", name: "Contact", to: "Contact" }
-  ],
-  routes:[
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
-    { id: "3R", name: "Favorites", route: "/Favorites"}
-  ]
-}
+  const links = {
+    to:[
+      { id: "1T", name: "Home", to: "Home" },
+      { id: "2T", name: "About Me", to: "About" },
+      { id: "3T", name: "Skills", to: "Skills" },
+      { id: "4T", name: "Projects", to: "Projects" },
+      { id: "5T", name: "Contact", to: "Contact" }
+    ],
+    routes:[
+      { id: "2R", name: "All Projects", route: "/All-Projects" },
+      { id: "3R", name: "Favorites", route: "/Favorites"}
+    ]
+  }
   return (
     <>
       <FixedNavSpacer />

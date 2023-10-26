@@ -21,8 +21,12 @@ export const fetchGitHubReops = createAsyncThunk(
         return res;
       });
       const data = await response.json();
-      console.log(data)
+      //console.log(data)
       const newData = data.filter((data) => (data.name !== githubUsername) && (data.visibility === "public") )
+      let newproyectos = JSON.parse(JSON.stringify(newData))
+      newproyectos.map((p) =>
+        p.favorito = false
+      )
       return newData;
     } catch (err) {
       return rejectWithValue(

@@ -50,7 +50,7 @@ export default function AllProjects() {
   const data = useSelector(selectData);
   const { name } = useSelector(homeData);
 
-  console.log("Pagina.jsx ", data)
+  //console.log("Pagina.jsx ", data)
 
   React.useEffect(
     function () {
@@ -193,43 +193,17 @@ export default function AllProjects() {
                 className="g-4 justify-content-center row"
               >
                 {searchInput.length > 0
-                  ? filteredResults.map(function ({
-                      id,
-                      image,
-                      name,
-                      description,
-                      html_url,
-                      homepage,
-                    }) {
+                  ? filteredResults.map((proy) => {
                       return (
-                        <Col key={id}>
-                          <StyledCard
-                            image={image}
-                            name={name}
-                            description={description}
-                            url={html_url}
-                            demo={homepage}
-                          />
+                        <Col key={proy.id}>
+                          <StyledCard proyect={proy} />
                         </Col>
                       );
                     })
-                  : filteredResults.map(function ({
-                      id,
-                      image,
-                      name,
-                      description,
-                      html_url,
-                      homepage,
-                    }) {
+                  : filteredResults.map((proy) => {
                       return (
-                        <Col key={id}>
-                          <StyledCard
-                            image={image}
-                            name={name}
-                            description={description}
-                            url={html_url}
-                            demo={homepage}
-                          />
+                        <Col key={proy.id}>
+                          <StyledCard proyect={proy} />
                         </Col>
                       );
                     })}

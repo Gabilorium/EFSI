@@ -8,6 +8,7 @@ import GH from "../images/GH.svg";
 import { Button, Card } from "react-bootstrap";
 import { FavoritosContext } from "../Context/FavoritosContext";
 import "../Button.css"
+import { propTypes } from "react-bootstrap/esm/Image";
 
 
 const StyledCardComponent = styled.div`
@@ -37,15 +38,32 @@ const StyledCardComponent = styled.div`
 `;
 
 export default function StyledCard({ proyect }) {
-  const {manejarFavorito} = useContext(FavoritosContext);
+  const {agregarFavorito, eliminarFavorito} = useContext(FavoritosContext);
+  console.log(proyect.favorito)
+
   return (
     <StyledCardComponent>
       <Card>
           <div className="costado-der">
-            <Button bsClassName="hola" className="button" onClick={()=> manejarFavorito(proyect)}>
-              <svg className="empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0H24V24H0z"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"></path></svg>
-              <svg className="filled" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
-            </Button>
+            {/*<Button className="button" onClick={()=> manejarFavorito(proyect)}>*/}
+            <label className="ui-like">
+              { proyect.favorito === true ?
+                <input type="checkbox" defaultChecked="true" onClick={()=> eliminarFavorito(proyect)}/>
+              :
+              <input type="checkbox" onClick={()=> agregarFavorito(proyect)}/>
+              }
+              <div className="like">
+                <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="">
+                  <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+                  <g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g className="svg" id="SVGRepo_iconCarrier">
+                    {/*M20.5,4.609A5.811,5.811,0,0,0,16,2.5a5.75,5.75,0,0,0-4,1.455A5.75,5.75,0,0,0,8,2.5,5.811,5.811,0,0,0,3.5,4.609c-.953,1.156-1.95,3.249-1.289,6.66,1.055,5.447,8.966,9.917,9.3,10.1a1,1,0,0,0,.974,0c.336-.187,8.247-4.657,9.3-10.1C22.45,7.858,21.453,5.765,20.5,4.609Zm-.674,6.28C19.08,14.74,13.658,18.322,12,19.34c-2.336-1.41-7.142-4.95-7.821-8.451-.513-2.646.189-4.183.869-5.007A3.819,3.819,0,0,1,8,4.5a3.493,3.493,0,0,1,3.115,1.469,1.005,1.005,0,0,0,1.76.011A3.489,3.489,0,0,1,16,4.5a3.819,3.819,0,0,1,2.959,1.382C19.637,6.706,20.339,8.243,19.826,10.889Z"*/}
+                    <path  d="M20.808,11.079C19.829,16.132,12,20.5,12,20.5s-7.829-4.368-8.808-9.421C2.227,6.1,5.066,3.5,8,3.5a4.444,4.444,0,0,1,4,2,4.444,4.444,0,0,1,4-2C18.934,3.5,21.773,6.1,20.808,11.079Z" ></path>
+                  </g>
+                </svg>
+              </div>
+            </label>
+            {/*</Button>*/}
           </div>
           <Card.Img
             variant="top"
