@@ -102,7 +102,7 @@ export default function StyledCard({ proyect, esFavorito }) {
           ) : null*/}
         </Card.Body>
         <Card.Footer className="text-center">
-          <Card.Link href={proyect.url}>
+          <Card.Link href={proyect.html_url}>
             {"View on GitHub "}
             <Icon icon="icomoon-free:github" />
           </Card.Link>
