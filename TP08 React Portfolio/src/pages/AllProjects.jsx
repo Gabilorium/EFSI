@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useSelector } from "react-redux";
 import { selectData as homeData } from "../pages/homeSlice";
 import { selectData, selectError, selectIsLoading } from "./allProjectsSlice";
@@ -21,6 +21,7 @@ import {
 } from "../components/globalStyledComponents";
 import StyledCard from "../components/StyledCard";
 import Footer from "../components/Footer";
+import { FavoritosContext } from "../Context/FavoritosContext";
 
 const StyledSection = styled.section`
   min-height: calc(100vh - var(--min-footer-height) - var(--nav-height));
@@ -49,6 +50,7 @@ export default function AllProjects() {
   const error = useSelector(selectError);
   const data = useSelector(selectData);
   const { name } = useSelector(homeData);
+  const {ExisteFavorito} = useContext(FavoritosContext);
 
   //console.log("Pagina.jsx ", data)
 
@@ -196,14 +198,14 @@ export default function AllProjects() {
                   ? filteredResults.map((proy) => {
                       return (
                         <Col key={proy.id}>
-                          <StyledCard proyect={proy} />
+                          <StyledCard proyect={proy} esFavorito={ExisteFavorito(proy.id)}/>
                         </Col>
                       );
                     })
                   : filteredResults.map((proy) => {
                       return (
                         <Col key={proy.id}>
-                          <StyledCard proyect={proy} />
+                          <StyledCard proyect={proy} esFavorito={ExisteFavorito(proy.id)}/>
                         </Col>
                       );
                     })}

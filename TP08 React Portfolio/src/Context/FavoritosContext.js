@@ -4,56 +4,59 @@ export const FavoritosContext = createContext();
 
 const FavoritosProvider = (props) => {
     const initialFavoritos = localStorage.getItem("favoritos") ? JSON.parse(localStorage.getItem("favoritos")) : [];
-    console.log(initialFavoritos)
+    //console.log(initialFavoritos)
 
     const [proyectos, setProyectos] = useState()
     const [favoritos, setFavoritos] = useState(initialFavoritos);
 
-    console.log(favoritos)
-    function agregarFavorito(proyecto) {
+    console.log("Favoritos: " ,favoritos)
+    function manejarFavorito(proyecto) {
         
         console.log("proyecto",proyecto)
 
         //console.log("idProducto: " + proyecto.id)
         
         const index = favoritos.findIndex((p) => p.id === proyecto.id); 
-        //console.log(index)
-
+        console.log(index)
         if (index < 0) {
-            let newproyectos = JSON.parse(JSON.stringify(proyecto))
+            let newProyecto = JSON.parse(JSON.stringify(proyecto))
+            //let proyecto = JSON.parse(JSON.stringify(proyecto))
             //console.log(newproyectos)
             //creas uno nuevo
-            newproyectos.favorito = true;
+            newProyecto.favorito = true;
             setFavoritos([
                 ...favoritos,
-                newproyectos,
+                newProyecto,
             ])
+
             //console.log(favoritos.favorio)
-        }        
-    }
-
-
-    function eliminarFavorito(proyecto) {
-        let newproyectos = JSON.parse(JSON.stringify(proyecto))
-        newproyectos.favorito = true;
-        console.log("idProducto: " + proyecto.id)
-        //console.log("Productos: " + JSON.stringify(productos, null, 2))
-        //  console.log("idProducto: "+ newproductos.id)
-        const index = favoritos.findIndex((p) => p.if === proyecto.id);
-        console.log("index: " + index)
-        if (index < 0) {
-            console.log("El proyecto no se encontró en el carrito.")
-        }
-        else{
+        }else{
+            let newProyecto = JSON.parse(JSON.stringify(proyecto))
+            newProyecto.favorito = false;
+            console.log("NewProyecto: ",newProyecto)
             const newList = favoritos.filter((p) => p.id !== proyecto.id)
+            setFavoritos(newList)
+
+            //console.log(favoritos)
+            //const newList = favoritos.filter((p) => p.id !== proyecto.id)
             //newproyectos = favoritos.filter((p) => p.id !== favoritos.id)
             //newList[index].favorio = false;
-            setFavoritos(newList);
-            /*console.log(newList)
-            setProyectos(newList)*/ 
-        }
+            //setFavoritos(newList);
+        }  
     }
     
+    const ExisteFavorito= (id)=>{
+
+        const index = favoritos.findIndex((p) => p.id === id); 
+        if(index<0){
+            console.log("no existe")
+            return false;
+        }else{
+            console.log("existe")
+            return true;
+        }
+        
+    }
     
     useEffect(() => {
         localStorage.setItem("favoritos", JSON.stringify(favoritos))      
@@ -63,8 +66,8 @@ const FavoritosProvider = (props) => {
         <FavoritosContext.Provider
             value={{
                 favoritos,
-                agregarFavorito,
-                eliminarFavorito
+                manejarFavorito,
+                ExisteFavorito
             }}
         >
             {props.children}

@@ -11,6 +11,8 @@ import { Icon } from "@iconify/react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
+import { FavoritosContext } from "../Context/FavoritosContext";
+import { useContext } from "react";
 export default function Projects() {
 
   const [mainProjects, setMainProjects] = useState([]);
@@ -18,6 +20,7 @@ export default function Projects() {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
+  const {ExisteFavorito} = useContext(FavoritosContext);
   console.log(data)
   
 
@@ -58,7 +61,7 @@ export default function Projects() {
                 {mainProjects.map((proy) =>{
                   return (
                     <Col key={proy.id}>
-                      <StyledCard proyect={proy} />
+                      <StyledCard proyect={proy} esFavorito={ExisteFavorito(proy.id)}/>
                     </Col>
                   );
                 })}

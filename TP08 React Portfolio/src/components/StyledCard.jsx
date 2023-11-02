@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";
@@ -9,6 +9,7 @@ import { Button, Card } from "react-bootstrap";
 import { FavoritosContext } from "../Context/FavoritosContext";
 import "../Button.css"
 import { propTypes } from "react-bootstrap/esm/Image";
+//import { useEffect } from "react";
 
 
 const StyledCardComponent = styled.div`
@@ -37,9 +38,26 @@ const StyledCardComponent = styled.div`
   }
 `;
 
-export default function StyledCard({ proyect }) {
-  const {agregarFavorito, eliminarFavorito} = useContext(FavoritosContext);
+
+export default function StyledCard({ proyect, esFavorito }) {
+  const {manejarFavorito} = useContext(FavoritosContext);
   console.log(proyect.favorito)
+
+  /*useEffect(() => {
+    console.log("useEffect");
+    // creamos una función para actualizar el estado con el clientWidth
+    const updateLike = () => {
+      const width = document.body.clientWidth;
+      console.log(`updateWidth con ${width}`);
+      setWidth(width);
+    };
+
+    // actualizaremos el width al montar el componente
+    updateWidth();
+
+    // nos suscribimos al evento resize de window
+    window.addEventListener("resize", updateWidth);
+  }, []);*/
 
   return (
     <StyledCardComponent>
@@ -47,10 +65,11 @@ export default function StyledCard({ proyect }) {
           <div className="costado-der">
             {/*<Button className="button" onClick={()=> manejarFavorito(proyect)}>*/}
             <label className="ui-like">
-              { proyect.favorito === true ?
-                <input type="checkbox" defaultChecked="true" onClick={()=> eliminarFavorito(proyect)}/>
+              
+              {   esFavorito ?
+                <input type="checkbox" defaultChecked onClick={()=> manejarFavorito(proyect)}/>
               :
-              <input type="checkbox" onClick={()=> agregarFavorito(proyect)}/>
+              <input type="checkbox" onClick={()=> manejarFavorito(proyect)}/>
               }
               <div className="like">
                 <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="">
